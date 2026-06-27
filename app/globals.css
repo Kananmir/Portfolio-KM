@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Caveat:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for easy theming */
+:root {
+  --color-cream: #F4F1E2;
+  --color-dusty-blue: #D8EBF9;
+  --color-sage: #D7D4B1;
+  --color-warm-brown: #513229;
+  --color-soft-gold: #FCE6B7;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-warm-brown);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-warm-brown);
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+/* Accent text (handwritten style) */
+.accent-text {
+  font-family: 'Caveat', cursive;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Links */
+a {
+  color: var(--color-warm-brown);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-dusty-blue);
+}
+
+/* Smooth transitions */
+button,
+a,
+input,
+textarea {
+  transition: all 0.3s ease;
+}
+
+/* Utility classes */
+.text-balance {
+  text-wrap: balance;
+}
+
+.smooth-transition {
+  transition: all 0.3s ease;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
